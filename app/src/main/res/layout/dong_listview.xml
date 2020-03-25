@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày tháng:"
+            android:textColor="#111"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/txtTrangthai"
+            android:textSize="25dp"
+            android:textColor="#111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái:"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            >
+            <ImageView
+                android:id="@+id/imgTrangThai"
+                android:src="@drawable/wind4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txtMaxTemp"
+                android:text="Max:Temp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txtMinTemp"
+                android:text="Min:Temp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
